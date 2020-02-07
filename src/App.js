@@ -15,6 +15,8 @@ import Form from './form/Form';
 import ReactLifecycleA from './reactlifecycle/ReactLifecycleA';
 import ErrorBoundary from './error/ErrorBoundary';
 import Hero from './error/Hero';
+import ClickCounter from './hoc/ClickCounter';
+import HoverCounter from './hoc/HoverCounter';
 function App() {
   return (
 //     <main role="main">
@@ -48,12 +50,16 @@ function App() {
 //<PersonList></PersonList>
 //<Form></Form>
 //<ReactLifecycleA/>
-<ErrorBoundary>
-  <Hero heroName="Batman"></Hero>
-  <Hero heroName="Superman"></Hero>
-  <Hero heroName="Joker"></Hero>
+// <ErrorBoundary>
+ // <Hero heroName="Batman"></Hero>
+ // <Hero heroName="Superman"></Hero>
+ // <Hero heroName="Joker"></Hero>
 
-</ErrorBoundary>
+//</ErrorBoundary>
+<React.Fragment>
+<ClickCounter/>
+<HoverCounter/>
+</React.Fragment> 
   );
 }
 
