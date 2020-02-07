@@ -4,25 +4,33 @@ import './App.css';
 
 import Greet from './component/Greet'
 import Welcome from './component/Welcome'
+import FunctionClick from './component/FunctionClick';
+import ClassClick from './component/ClassClick';
+import EventBind from './component/EventBind';
+import ParentComponent from './component/ParentComponent';
 function App() {
   return (
     <main role="main">
-        <div class="container">
-        <div class="row">
-      <div class="col-md-4">
+        <div className="container">
+        <div className="row">
+      <div className="col-md-4">
         <Greet></Greet>
+        <ParentComponent></ParentComponent>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <p><a className="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div>
-      <div class="col-md-4">
+      <div className="col-md-4">
        <Welcome></Welcome>
         <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <p><a className="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
       </div>
-      <div class="col-md-4">
+      <div className="col-md-4">
         <h2>Heading</h2>
         <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <p><a className="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <FunctionClick></FunctionClick>
+        <ClassClick></ClassClick>
+        <EventBind></EventBind>
       </div>
     </div>
 
